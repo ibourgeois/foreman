@@ -6,6 +6,5 @@ if (file_exists(__DIR__.'/../../autoload.php')) {
     require __DIR__.'/vendor/autoload.php';
 }
 $app = new Symfony\Component\Console\Application('Foreman', '0.0.3-alpha');
-$app->add(new iBourgeois\Foreman\Console\BlueprintCommand);
-$app->add(new iBourgeois\Foreman\Console\DeployCommand);
+$app->add(new iBourgeois\Foreman\Console\Commands\ProjectCommand);
 $app->run();

@@ -1,6 +1,6 @@
 <?php
 
-namespace iBourgeois\Foreman\Console;
+namespace iBourgeois\Foreman\Console\Commands;
 
 use RuntimeException;
 use GuzzleHttp\Client;
@@ -10,7 +10,7 @@ use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 
-class BlueprintCommand extends Command
+class ProjectCommand extends Command
 {
 	/**
      * Configure the command options.
@@ -20,8 +20,8 @@ class BlueprintCommand extends Command
     protected function configure()
     {
         $this
-            ->setName('update')
-            ->setDescription('update foreman');
+            ->setName('project')
+            ->setDescription('foreman project ');
     }
 
     /**
